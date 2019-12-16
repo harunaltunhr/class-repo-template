@@ -7,8 +7,8 @@
       "description": "the repo-name for this module, hosted on the organization. Students are not expected to have a repo of this name"
     },
     "status": {
-      "type": "number",
-      "description": "0,1,2. indicating 'todo', 'in progress', 'done'"
+      "type": "string",
+      "description": "any string.  things like 'to do', or 'in progress' are helpful"
     },
     "board": {
       "type": "number",
@@ -37,6 +37,10 @@
         "type": "$ref/assignment.json",
         "description": "an overview of what the dashboard for look for in each assessment"
       }
+    },
+    "repo": {
+      "type": "string",
+      "description": "optional.  if present, this is used to generate link to repo. otherwise name is used"
     }
   }
 }

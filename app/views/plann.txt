@@ -1,0 +1,3 @@
+push queries to url for permalinking
+
+make available permlinks for one student/module pair

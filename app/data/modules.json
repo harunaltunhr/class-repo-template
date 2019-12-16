@@ -1,29 +1,29 @@
 [
   {
-    "name": "Working With Code",
-    "status": "in progress",
-    "boardNumber": 1,
+    "name": "working-with-code",
+    "status": "to do",
+    "board": 1,
     "projects": [
       {
         "name": "/student-bios Pull Request",
-        "live": "https://github.com/HackYourFutureBelgium/class-repo-template/tree/master/student-bios/<user-name>.md"
+        "live": "https://HackYourFutureBelgium.github.io/class-repo-template/student-bios/<user-name>.md",
+        "source": "https://github.com/HackYourFutureBelgium/class-repo-template/tree/master/student-bios/<user-name>.md",
+        "repo": false
       },
       {
-        "name": "Study Planning repository",
-        "repo": "hack-my-future",
+        "name": "hack-my-future",
         "live": false
       },
       {
-        "name": "Personal Home Page",
-        "repo": "<user-name>.github.io",
+        "name": "<user-name>.github.io",
         "live": "https://<user-name>.github.io"
       }
     ]
   },
   {
-    "name": "Incremental Development",
+    "name": "incremental-development",
     "status": "to do",
-    "boardNumber": 2,
+    "board": 2,
     "projects": [
       {
         "name": "acme-web-design"
@@ -38,18 +38,70 @@
     "exercises": [
       {
         "name": "FCC: Applied Accessibility (22/22)",
-        "url": "https://freecodecamp.org/<user-name>"
+        "live": "https://freecodecamp.org/<user-name>",
+        "repo": false
       },
       {
         "name": "FCC: Responsive Web Design Principles (4/4)",
-        "url": "https://freecodecamp.org/<user-name>"
+        "live": "https://freecodecamp.org/<user-name>",
+        "repo": false
+      }
+    ]
+  },
+  {
+    "name": "separation-of-concerns",
+    "status": "to do",
+    "board": 3,
+    "projects": [
+      {
+        "name": "first"
+      },
+      {
+        "name": "second"
+      },
+      {
+        "name": "third"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "FCC: Basic JavaScript",
+        "live": "https://freecodecamp.org/<user-name>",
+        "repo": false
+      },
+      {
+        "name": "variables"
+      },
+      {
+        "name": "functions"
+      },
+      {
+        "name": "types"
+      },
+      {
+        "name": "operators"
+      },
+      {
+        "name": "conditionals"
+      },
+      {
+        "name": "loops"
+      },
+      {
+        "name": "arrays"
+      },
+      {
+        "name": "objects"
+      },
+      {
+        "name": "using-user-input"
       }
     ]
   },
   {
     "name": "Node JS",
     "status": "in progress",
-    "boardNumber": 6,
+    "board": 6,
     "projects": [
       {
         "name": "pokedex-api",

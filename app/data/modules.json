@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Working With Code",
+    "status": "in progress",
+    "boardNumber": 1,
+    "projects": [
+      {
+        "name": "/student-bios Pull Request",
+        "live": "https://github.com/HackYourFutureBelgium/class-repo-template/tree/master/student-bios/<user-name>.md"
+      },
+      {
+        "name": "Study Planning repository",
+        "repo": "hack-my-future",
+        "live": false
+      },
+      {
+        "name": "Personal Home Page",
+        "repo": "<user-name>.github.io",
+        "live": "https://<user-name>.github.io"
+      }
+    ]
+  },
+  {
+    "name": "Incremental Development",
+    "status": "to do",
+    "boardNumber": 2,
+    "projects": [
+      {
+        "name": "acme-web-design"
+      },
+      {
+        "name": "travelville"
+      },
+      {
+        "name": "duck-duck-clone"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "FCC: Applied Accessibility (22/22)",
+        "url": "https://freecodecamp.org/<user-name>"
+      },
+      {
+        "name": "FCC: Responsive Web Design Principles (4/4)",
+        "url": "https://freecodecamp.org/<user-name>"
+      }
+    ]
+  },
+  {
+    "name": "Node JS",
+    "status": "in progress",
+    "boardNumber": 6,
+    "projects": [
+      {
+        "name": "pokedex-api",
+        "live": false,
+        "reports": [
+          "functions/report.json"
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "name": "javascript-exercises",
+        "live": false,
+        "reports": [
+          "helloWorld/report.txt",
+          "repeatString/report.txt",
+          "reverseString/report.txt",
+          "tempConversion/report.txt",
+          "getTheTitles/report.txt",
+          "findTheOldest/report.txt",
+          "calculator/report.txt"
+        ]
+      }
+    ]
+  }
+]

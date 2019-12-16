@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>class 6</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <!-- <script src='views/home.js'></script>
+  <script src='views/module.js'></script>
+  <script src='views/student.js'></script>
+  <script src='views/repo.js'></script>
+  <script src='views/link-buttons.js'></script>-->
+  <script src='app/views/student.js'></script>
+
+  <script>
+    window.onload = async () => {
+
+      window.state = await fetch('./app/data/index.json')
+        .then(resp => resp.json())
+        .catch(err => console.log(err));
+
+      state.students = await fetch('./app/data/students.json')
+        .then(resp => resp.json())
+        .catch(err => err);
+
+      state.modules = await fetch('./app/data/modules.json')
+        .then(resp => resp.json())
+        .catch(err => err);
+
+      state.userName = window.location.origin
+        .split('https://').join('')
+        .split('http://').join('')
+        .split('.')
+        .shift();
+      state.repoName = window.location.pathname
+        .split('index.html').join('');
+
+      const urlParams = new URL(window.location.href).searchParams;
+
+      state.currentStudent = state.students
+        .find(student => student.name === urlParams.get("student"));
+
+      state.currentModule = state.modules
+        .find(module => module.name === urlParams.get("module"));
+
+
+      if (state.currentStudent && state.currentStudent) {
+        // render just the student/module
+      } else if (state.currentStudent) {
+        // render the whole student
+      } else if (state.currentModule) {
+        // render the whole module
+      } else {
+        // render home
+      }
+
+      state.modules.forEach(mod => {
+        document.body.appendChild(renderModules(mod));
+      });
+
+      // state.students.forEach(stud => {
+      //   document.body.appendChild(renderStudent(stud));
+      // });
+
+      const repoButton = document.createElement('button');
+      repoButton.innerHTML = 'to main repository';
+
+      const a = document.createElement('a');
+      a.href = "https://github.com/" + state.userName + "/" + state.repoName;
+      a.target = "_blank";
+      a.appendChild(repoButton);
+
+      document.getElementById('to-main-repo').appendChild(a);
+    }
+  </script>
+</head>
+
+<body>
+
+  <button id='go-home-top'>back to index</button>
+  <script>
+    // document.getElementById('go-home-top').onclick = () => {
+    //   document.getElementById('root').innerHTML = '';
+    //   document.getElementById('root').appendChild(renderHome(modules, students));
+    // }
+  </script>
+
+  <div id='root'></div>
+
+  <button id='go-home-bottom'>back to index</button>
+  <script>
+    // document.getElementById('go-home-bottom').onclick = () => {
+    //   document.getElementById('root').innerHTML = '';
+    //   document.getElementById('root').appendChild(renderHome(modules, students));
+    // }
+  </script>
+  <br>
+  <hr>
+  <br>
+
+  <div id='to-main-repo'></div>
+
+  <br>
+  <hr>
+  <hr>
+  <a href="https://hackyourfuture.be" target="_blank"><img
+      src="https://user-images.githubusercontent.com/18554853/63941625-4c7c3d00-ca6c-11e9-9a76-8d5e3632fe70.jpg"
+      width="100" height="100"></a>
+
+
+</body>
+
+</html>

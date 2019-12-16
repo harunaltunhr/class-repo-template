@@ -1,0 +1,29 @@
+{
+  "description": "enough information about each assignment to create an overview and generate code-review/report links",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "what the assignment is called.  if there is a repo for this project, the name should be exactly the expected repo name"
+    },
+    "live": {
+      "type": [
+        "boolean",
+        "string"
+      ],
+      "description": "(defaults to true). whether or not to expect a live site accompanying this assignment. if the value is true, a link to github pages will be auto-generated.  if the value is a string that string will be treated as the url for the live project.  Strings will have all instances of '<user-name>' replaced with the student's github user name, and all instances of `<assignment-name>` will be replaced with the name from this assignment entry"
+    },
+    "reports": {
+      "type": "array",
+      "description": "a list of any and all report files a student is expected to build and push for this assignment.  will be read using github pages",
+      "items": {
+        "type": "string",
+        "description": "relative paths to report files from the top of the repo. should indicate file & extension"
+      }
+    },
+    "repo": {
+      "type": "string",
+      "description": "optional.  will be used to generate links to the repository if you want to name the project something different than the repo name"
+    }
+  }
+}

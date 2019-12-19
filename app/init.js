@@ -27,35 +27,35 @@ const init = async () => {
 
   const urlParams = new URL(window.location.href).searchParams;
 
+  const studentParam = urlParams.get("student");
   state.currentStudent = state.students
-    .find(student => student.name === urlParams.get("student"));
+    .find(student => student.name === studentParam)
+    || state.students
+      .find(student => student.userName === studentParam);
 
+  const moduleParam = urlParams.get("module");
   state.currentModule = state.modules
-    .find(module => module.name === urlParams.get("module"));
+    .find(module => module.name === moduleParam)
+    || state.modules
+      .find(module => module.board === Number(moduleParam))
+    || state.modules
+      .find(module => module.repo === moduleParam);
 
 
   console.log(state);
 
-  const root = document.getElementById('root');
+  state.root = document.getElementById('root');
+  const root = state.root;
+
   if (state.currentStudent && state.currentModule) {
     root.appendChild(await studentThumb(state.currentStudent));
     root.appendChild(document.createElement('hr'));
     root.appendChild(await moduleThumb(state.currentModule));
     root.appendChild(await assignments(state.currentModule, state.currentStudent));
   } else if (state.currentStudent) {
-    root.appendChild(await studentThumb(state.currentStudent));
-    for (const module of state.modules) {
-      root.appendChild(document.createElement('hr'));
-      root.appendChild(await moduleThumb(module));
-      root.appendChild(await assignments(module, state.currentStudent));
-    }
+    renderStudent(state.currentStudent, state);
   } else if (state.currentModule) {
-    root.appendChild(await moduleThumb(state.currentModule));
-    for (const student of state.students) {
-      root.appendChild(document.createElement('hr'));
-      root.appendChild(await studentThumb(student));
-      root.appendChild(await assignments(state.currentModule, student));
-    }
+    renderModule(state.currentModule, state);
   } else {
     root.appendChild(await home(state));
   }

@@ -42,16 +42,7 @@ const studentThumb = async student => {
   const allAssignments = document.createElement('button');
   allAssignments.innerHTML = 'Review all assignments';
   allAssignments.onclick = async () => {
-    const root = document.getElementById('root');
-    root.innerHTML = '';
-    root.appendChild(studentThumb.cache.get(student));
-
-    for (const module of state.modules) {
-      root.appendChild(document.createElement('hr'));
-      root.appendChild(moduleThumb.cache.get(module));
-      root.appendChild(await assignments(module, student));
-      root.appendChild(document.createElement('br'));
-    }
+    renderStudent(student, state);
   }
 
   const studentInfo = [nameComponent, githubLink, personalPageLink, allAssignments]

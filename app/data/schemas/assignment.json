@@ -11,11 +11,19 @@
         "boolean",
         "string"
       ],
-      "description": "(defaults to true). whether or not to expect a live site accompanying this assignment. if the value is true, a link to github pages will be auto-generated.  if the value is a string that string will be treated as the url for the live project.  Strings will have all instances of '<user-name>' replaced with the student's github user name"
+      "description": "whether or not to expect a live site accompanying this assignment. if the value is true, a link to github pages will be auto-generated.  if the value is a string that string will be treated as the url for the live project.  Strings will have all instances of '<user-name>' replaced with the student's github user name"
     },
     "source": {
       "type": "string",
       "description": "optional. a URL where to find the source code, if not provided a github link will be generated from the repo/name and student.userName"
+    },
+    "directories": {
+      "type": "array",
+      "description": "a list of sub-folders to be completed. there will be no api check, if the repo exists buttons to the source code will be rendered. if the repo is live, live links will also be rendered",
+      "items": {
+        "type": "string",
+        "description": "relative paths to the directory/file expected"
+      }
     },
     "reports": {
       "type": "array",

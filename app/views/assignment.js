@@ -34,7 +34,7 @@ const assignment = async (assignment, student) => {
   } if (assignment.repo || !assignment.hasOwnProperty('repo')) {
     try {
 
-      const res = await fetch(liveURL + '/README.md');
+      const res = await fetch(liveURL + '/index.html');
 
       if (res.ok) {
         const preHrefURL = typeof assignment.repo === 'string'
@@ -49,6 +49,30 @@ const assignment = async (assignment, student) => {
         repoA.href = hrefURL;
         repoA.appendChild(repoButton);
         container.appendChild(repoA);
+
+        if (Array.isArray(assignment.directories) && assignment.directories.length > 0) {
+          const directoriesUl = assignment.directories
+            .map(directory => {
+              const directoryButton = document.createElement('button');
+              directoryButton.innerHTML = 'review directory';
+
+              const directoryA = document.createElement('a');
+              directoryA.target = '_blank';
+              directoryA.href = hrefURL + '/tree/master/' + directory;
+              directoryA.appendChild(directoryButton);
+
+              const directoryLi = document.createElement('li');
+              directoryLi.appendChild(document.createTextNode(directory));
+              directoryLi.appendChild(directoryA);
+              return directoryLi;
+            })
+            .reduce((ul, li) => {
+              ul.appendChild(li);
+              return ul;
+            }, document.createElement('ul'));
+
+          container.appendChild(directoriesUl);
+        }
       } else {
         const repoText = document.createElement('text');
         repoText.innerHTML = '-- ' + res.status + ' --';
@@ -76,7 +100,7 @@ const assignment = async (assignment, student) => {
 
     // if true or not present
     // generate a live link from repo/name & username
-  } else if (assignment.live === true || !assignment.hasOwnProperty('live')) {
+  } else if (assignment.live === true) {
 
     const liveEl = (async () => {
       try {

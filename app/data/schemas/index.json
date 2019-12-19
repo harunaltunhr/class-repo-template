@@ -18,6 +18,13 @@
       "type": "string",
       "description": "the name property of student module currently rendered, if empty all students will be rendered.  This is set by user actions or url queries at load"
     },
+    "root": {
+      "type": [
+        "Element",
+        "string"
+      ],
+      "description": "the root for this app. if string, will find by id. if Element, will operate directly"
+    },
     "students": {
       "type": "$ref/students.json"
     },

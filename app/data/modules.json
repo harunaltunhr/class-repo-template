@@ -65,36 +65,126 @@
     ],
     "exercises": [
       {
+        "name": "js-in-order?"
+      },
+      {
+        "name": "js-exercises"
+      },
+      {
+        "name": "using-user-input"
+      },
+      {
         "name": "FCC: Basic JavaScript",
         "live": "https://freecodecamp.org/<user-name>",
         "repo": false
       },
       {
-        "name": "variables"
+        "name": "FCC: Debugging",
+        "live": "https://freecodecamp.org/<user-name>",
+        "repo": false
+      }
+    ]
+  },
+  {
+    "name": "stateful-web-pages",
+    "status": "to do",
+    "board": 3,
+    "projects": [
+      {
+        "name": "first"
       },
       {
-        "name": "functions"
+        "name": "second"
       },
       {
-        "name": "types"
+        "name": "third"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "js-exercises-tdd",
+        "directories": [
+          "I.pass-tests",
+          "II.write-tests",
+          "III.tdd-katas"
+        ]
       },
       {
-        "name": "operators"
+        "name": "javascript-exercises"
       },
       {
-        "name": "conditionals"
+        "name": "solution-design (early returns, ...)"
       },
       {
-        "name": "loops"
+        "name": "dom-manipulation"
       },
       {
-        "name": "arrays"
+        "name": "FCC: Basic Data Structures",
+        "live": "https://freecodecamp.org/<user-name>",
+        "repo": false
       },
       {
-        "name": "objects"
+        "name": "FCC: Basic Algorithm Scripting",
+        "live": "https://freecodecamp.org/<user-name>",
+        "repo": false
+      }
+    ]
+  },
+  {
+    "name": "encapsulation",
+    "status": "to do",
+    "board": 3,
+    "projects": [
+      {
+        "name": "practical-javascript"
       },
       {
-        "name": "using-user-input"
+        "name": "something"
+      },
+      {
+        "name": "entries-thing"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "dom-components"
+      },
+      {
+        "name": "FCC: Intermediate Algorithm Scripting",
+        "live": "https://freecodecamp.org/<user-name>",
+        "repo": false
+      }
+    ]
+  },
+  {
+    "name": "web-apps",
+    "status": "to do",
+    "board": 3,
+    "projects": [
+      {
+        "name": "book-thing-traversy"
+      },
+      {
+        "name": "github-api-project"
+      },
+      {
+        "name": "something"
+      }
+    ],
+    "exercises": [
+      {
+        "name": "event-loop"
+      },
+      {
+        "name": "fetching-data"
+      },
+      {
+        "name": "closure"
+      },
+      {
+        "name": "FCC: Advanced Algorithm Scripting",
+        "live": "https://freecodecamp.org/<user-name>",
+        "repo": false
       }
     ]
   },

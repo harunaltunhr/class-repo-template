@@ -34,16 +34,7 @@ const moduleThumb = module => {
   const studentsButton = document.createElement('button');
   studentsButton.innerHTML = 'All student assignments';
   studentsButton.onclick = async () => {
-    const root = document.getElementById('root');
-    root.innerHTML = '';
-    root.appendChild(moduleThumb(module));
-
-    for (const student of state.students) {
-      root.appendChild(document.createElement('hr'));
-      root.appendChild(studentThumb.cache.get(student));
-      root.appendChild(await assignments(module, student));
-      root.appendChild(document.createElement('br'));
-    }
+    renderModule(module, state);
   }
 
 

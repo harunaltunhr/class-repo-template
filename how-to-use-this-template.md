@@ -12,6 +12,7 @@ Do you want to start a repo like this? not so hard! Head over to [the template r
     1. turn on github pages
     1. update the `repoName` and `userName` in `./app/data/index.json`
     1. add your students to `./app/data/students.js` (`{name:"student name", userName: "githubUserName"}`)
+    1. change the title of `index.html` to whatever you are calling your new class 
 1. set up the wiki in your new repo
     1. enable wikis in your new repo
     1. enable editing for non-contributors (if you want to)

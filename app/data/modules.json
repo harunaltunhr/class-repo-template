@@ -1,220 +1,32 @@
 [
   {
     "name": "working-with-code",
-    "status": "to do",
-    "board": 1,
-    "projects": [
-      {
-        "name": "/student-bios Pull Request",
-        "live": "https://HackYourFutureBelgium.github.io/class-repo-template/student-bios/<user-name>.md",
-        "source": "https://github.com/HackYourFutureBelgium/class-repo-template/tree/master/student-bios/<user-name>.md",
-        "repo": false
-      },
-      {
-        "name": "hack-my-future",
-        "live": false
-      },
-      {
-        "name": "<user-name>.github.io",
-        "live": "https://<user-name>.github.io"
-      }
-    ]
+    "status": "in progress",
+    "board": 1
   },
   {
     "name": "incremental-development",
     "status": "to do",
-    "board": 2,
-    "projects": [
-      {
-        "name": "acme-web-design"
-      },
-      {
-        "name": "travelville"
-      },
-      {
-        "name": "duck-duck-clone"
-      }
-    ],
-    "exercises": [
-      {
-        "name": "FCC: Applied Accessibility (22/22)",
-        "live": "https://freecodecamp.org/<user-name>",
-        "repo": false
-      },
-      {
-        "name": "FCC: Responsive Web Design Principles (4/4)",
-        "live": "https://freecodecamp.org/<user-name>",
-        "repo": false
-      }
-    ]
+    "board": 2
   },
   {
     "name": "separation-of-concerns",
     "status": "to do",
-    "board": 3,
-    "projects": [
-      {
-        "name": "first"
-      },
-      {
-        "name": "second"
-      },
-      {
-        "name": "third"
-      }
-    ],
-    "exercises": [
-      {
-        "name": "js-in-order?"
-      },
-      {
-        "name": "js-exercises"
-      },
-      {
-        "name": "using-user-input"
-      },
-      {
-        "name": "FCC: Basic JavaScript",
-        "live": "https://freecodecamp.org/<user-name>",
-        "repo": false
-      },
-      {
-        "name": "FCC: Debugging",
-        "live": "https://freecodecamp.org/<user-name>",
-        "repo": false
-      }
-    ]
+    "board": 3
   },
   {
-    "name": "stateful-web-pages",
+    "name": "state",
     "status": "to do",
-    "board": 3,
-    "projects": [
-      {
-        "name": "first"
-      },
-      {
-        "name": "second"
-      },
-      {
-        "name": "third"
-      }
-    ],
-    "exercises": [
-      {
-        "name": "js-exercises-tdd",
-        "directories": [
-          "I.pass-tests",
-          "II.write-tests",
-          "III.tdd-katas"
-        ]
-      },
-      {
-        "name": "javascript-exercises"
-      },
-      {
-        "name": "solution-design (early returns, ...)"
-      },
-      {
-        "name": "dom-manipulation"
-      },
-      {
-        "name": "FCC: Basic Data Structures",
-        "live": "https://freecodecamp.org/<user-name>",
-        "repo": false
-      },
-      {
-        "name": "FCC: Basic Algorithm Scripting",
-        "live": "https://freecodecamp.org/<user-name>",
-        "repo": false
-      }
-    ]
+    "board": 4
   },
   {
     "name": "encapsulation",
     "status": "to do",
-    "board": 3,
-    "projects": [
-      {
-        "name": "practical-javascript"
-      },
-      {
-        "name": "something"
-      },
-      {
-        "name": "entries-thing"
-      }
-    ],
-    "exercises": [
-      {
-        "name": "dom-components"
-      },
-      {
-        "name": "FCC: Intermediate Algorithm Scripting",
-        "live": "https://freecodecamp.org/<user-name>",
-        "repo": false
-      }
-    ]
+    "board": 5
   },
   {
-    "name": "web-apps",
+    "name": "public-apis",
     "status": "to do",
-    "board": 3,
-    "projects": [
-      {
-        "name": "book-thing-traversy"
-      },
-      {
-        "name": "github-api-project"
-      },
-      {
-        "name": "something"
-      }
-    ],
-    "exercises": [
-      {
-        "name": "event-loop"
-      },
-      {
-        "name": "fetching-data"
-      },
-      {
-        "name": "closure"
-      },
-      {
-        "name": "FCC: Advanced Algorithm Scripting",
-        "live": "https://freecodecamp.org/<user-name>",
-        "repo": false
-      }
-    ]
-  },
-  {
-    "name": "Node JS",
-    "status": "in progress",
-    "board": 6,
-    "projects": [
-      {
-        "name": "pokedex-api",
-        "live": false,
-        "reports": [
-          "functions/report.json"
-        ]
-      }
-    ],
-    "exercises": [
-      {
-        "name": "javascript-exercises",
-        "live": false,
-        "reports": [
-          "helloWorld/report.txt",
-          "repeatString/report.txt",
-          "reverseString/report.txt",
-          "tempConversion/report.txt",
-          "getTheTitles/report.txt",
-          "findTheOldest/report.txt",
-          "calculator/report.txt"
-        ]
-      }
-    ]
+    "board": 6
   }
 ]

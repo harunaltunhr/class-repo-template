@@ -9,7 +9,7 @@ const studentThumb = async student => {
   studentImg.alt = student.name + ' - ' + student.userName;
   studentImg.style = 'height:130px;width:130px;';
   try {
-    const userObjPromise = await fetch('https://api.github.com/users/' + student.userName);
+    const userObjPromise = await fetch('https://cors-anywhere.herokuapp.com/' + 'https://api.github.com/users/' + student.userName);
     const userData = await userObjPromise.json();
     studentImg.src = userData.avatar_url;
   } catch (err) {
@@ -71,40 +71,3 @@ const studentThumb = async student => {
 
 studentThumb.cache = new Map();
 
-
-
-// // with cache object
-// const studentThumb = async student => {
-//   student.count = typeof student.count === 'number'
-//     ? student.count += 1
-//     : student.count = 1;
-
-//   if (studentThumb.cache[student.userName]) {
-//     console.log('returning cached ' + student.userName)
-//     return studentThumb.cache[student.userName];
-//   }
-
-//   const studentImg = document.createElement('img');
-//   studentImg.alt = student.name + ' - ' + student.userName;
-//   studentImg.style = 'height:10%;width:10%;';
-//   studentImg.src = await fetch('https://api.github.com/users/' + student.userName)
-//     .then(resp => resp.json())
-//     .then(user => user.avatar_url)
-//     .catch(err => {
-//       console.log(err);
-//       return "";
-//     });
-
-//   const container = document.createElement('div');
-//   container.id = student.name;
-
-//   container.appendChild(studentImg);
-
-//   console.log('returning new ' + student.userName);
-
-//   studentThumb.cache[student.userName] = container;
-//   return container;
-
-// }
-
-// studentThumb.cache = {};

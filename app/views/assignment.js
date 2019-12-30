@@ -31,10 +31,14 @@ const assignment = async (assignment, student) => {
     // else use the repo/name for url generation
     // repos "don't exist" without a README & gh-pages
     //  assume repos exist unless explicitly told false
-  } if (assignment.repo || !assignment.hasOwnProperty('repo')) {
+  }
+
+  if (assignment.repo || !assignment.hasOwnProperty('repo')) {
     try {
 
-      const res = await fetch(liveURL + '/index.html');
+      const res = await fetch('https://cors-anywhere.herokuapp.com/' + liveURL);
+      // const res = await fetch(liveURL + '/README.md');
+      // const res = await fetch(liveURL);
 
       if (res.ok) {
         const preHrefURL = typeof assignment.repo === 'string'
@@ -87,14 +91,15 @@ const assignment = async (assignment, student) => {
     }
   };
 
-  // use this literally as a review link
+  // use this directly as a review link
   // cors: can't do an existence check
   if (typeof assignment.live === 'string') {
     const liveButton = document.createElement('button');
     liveButton.innerHTML = 'review assignment';
     const liveA = document.createElement('a');
     liveA.target = '_blank';
-    liveA.href = assignment.live.replace('<user-name>', student.userName);
+    liveA.href = liveURL;
+    // liveA.href = assignment.live.replace('<user-name>', student.userName);
     liveA.appendChild(liveButton);
     container.appendChild(liveA);
 
@@ -104,7 +109,7 @@ const assignment = async (assignment, student) => {
 
     const liveEl = (async () => {
       try {
-        const response = await fetch(liveURL + '/README.md');
+        const response = await fetch('https://cors-anywhere.herokuapp.com/' + liveURL + '/README.md');
         if (response.ok) {
           const liveButton = document.createElement('button');
           liveButton.innerHTML = 'live project';
@@ -141,22 +146,21 @@ const assignment = async (assignment, student) => {
       reportLi.appendChild(reportPathEl);
 
       try {
-        const res = await fetch(liveURL + '/' + reportPath);
+        const res = await fetch('https://cors-anywhere.herokuapp.com/' + liveURL + '/' + reportPath);
 
         if (res.ok) {
-          const report = await (async () => {
-            try {
-              return await res.clone().json();
-            } catch (err) {
-              return await res.text();
-            }
-          })()
 
           const reportButton = document.createElement('button');
           reportButton.innerHTML = 'log report';
           reportButton.onclick = async () => {
             console.group(student.name + ': ' + assignment.name + ' -> ' + reportPath);
-            console.log(report);
+            console.log(await (async () => {
+              try {
+                return await res.clone().json();
+              } catch (err) {
+                return await res.text();
+              }
+            })());
             console.groupEnd();
           }
           reportLi.appendChild(reportButton);

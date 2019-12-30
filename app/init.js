@@ -25,6 +25,25 @@ const init = async () => {
   if (window.state.modules instanceof Error) return;
 
 
+  const pendingAssignments = state.modules.map(module => {
+    if (module.status !== 'to do') {
+      const url = `https://${state.userName}.github.io/${module.name}/assignments.json`
+      // https://stackoverflow.com/questions/43262121/trying-to-use-fetch-and-pass-in-mode-no-cors
+      // return fetch(url)
+      return fetch('https://cors-anywhere.herokuapp.com/' + url)
+        .then(res => res.json())
+        .then(assignments => Object.assign(module, assignments))
+        .catch(err => {
+          console.log(err)
+          return err;
+        });
+    } else {
+      return Promise.resolve({});
+    }
+  });
+
+  await Promise.all(pendingAssignments)
+
   const urlParams = new URL(window.location.href).searchParams;
 
   const studentParam = urlParams.get("student");

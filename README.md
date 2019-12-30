@@ -4,7 +4,6 @@ Hello Class NUMBER!
 
 This repository is yours to keep track of what you've covered so far, to get to know each other, to post helpful resources, to practice collaborating on github, ... to do everything!  Slack is great for chatting but links and good explanations can easily get lost in message history.  Think of this repository as your class' forum and shared reference.
 
-Any of you who are interested in helping to manage your class' repo can let us know in [a comment on this issue](https://github.com/HackYourFutureBelgium/class-repo-template/issues/1).  We can give you access to the repo and help you get started.
 
 ---
 

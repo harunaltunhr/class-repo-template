@@ -20,7 +20,6 @@ Do you want to start a repo like this? not so hard! Head over to [the template r
     1. replace all instances of `class-repo-template` with your new repo name
     1. push to your new repo's wiki
 1. copy the template project board to your repo, one for each module
-1. copy the issue from this repository for students to volunteer to be class repo managers
 
 
 > if you're using this repo outside of the HackYourFutureBelgium organization, you'll need to update a few links to make sure that the class repo is consistently pointing to itself where necessary.

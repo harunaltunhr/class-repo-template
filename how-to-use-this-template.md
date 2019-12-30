@@ -1,3 +1,5 @@
+Do you want to start a repo like this? not so hard! Head over to [the template repository at HackYourFutureBelgium](https://github.com/HackYourFutureBelgium/class-repo-template/) and follow these instructions:
+
 1. set up a new repo for your class
     * either by cloning
         1. start an empty repository in your organization

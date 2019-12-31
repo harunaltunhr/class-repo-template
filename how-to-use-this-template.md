@@ -6,8 +6,8 @@
     1. push
 1. set up the class overview app
     1. turn on github pages
-    1. update the `repoName` and `userName` in `./app/data/index.json`
-    1. add your students to `./app/data/students.js` (`{name:"student name", userName: "githubUserName"}`)
+    1. update the `repoName` and `userName` in `./class-data/index.json`
+    1. add your students to `./class-data/students.js` (`{name:"student name", userName: "githubUserName"}`)
 1. set up the wiki in your new repo
     1. enable wikis in your new repo
     1. enable editing for non-contributors (if you want to)

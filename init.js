@@ -1,6 +1,6 @@
 const init = async () => {
 
-  window.state = await fetch('./class-data/index.json')
+  window.state = await fetch('./data/index.json')
     .then(resp => resp.json())
     .catch(err => {
       console.log(err);
@@ -8,7 +8,7 @@ const init = async () => {
     });
   if (window.state instanceof Error) return;
 
-  state.students = await fetch('./class-data/students.json')
+  state.students = await fetch('./data/students.json')
     .then(resp => resp.json())
     .catch(err => {
       console.log(err);
@@ -16,7 +16,7 @@ const init = async () => {
     });
   if (window.state.students instanceof Error) return;
 
-  state.modules = await fetch('./class-data/modules.json')
+  state.modules = await fetch('./data/modules.json')
     .then(resp => resp.json())
     .catch(err => {
       console.log(err);

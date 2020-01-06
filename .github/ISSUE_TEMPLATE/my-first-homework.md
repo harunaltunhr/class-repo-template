@@ -1,13 +1,11 @@
 ---
 name: My first HYF homework
 about: A template issue for the first week's assignment
-title: ''
+title: 'Your Name: working with code, Week 1'
 labels: ''
 assignees: ''
 
 ---
-
-## My First Homework
 
 - [ ] (computer) Software Installations
   - [ ] [Chromium](https://download-chromium.appspot.com/), [Firefox](https://www.mozilla.org/en-US/firefox/developer/) or [Brave](https://brave.com/download/): All great browsers with ES6, HTML5 & CSS3 support plus pre-installed, top-knotch developer tools.  Try each one to see what you like best!

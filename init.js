@@ -26,6 +26,12 @@ const init = async () => {
 
 
   const pendingAssignments = state.modules.map(module => {
+    // use hard-coded assignments if they exist
+    // allowing class repos to "freeze" as module assignments change with time
+    if (module.projects || module.exercises || module.assessments) {
+      return Promise.resolve({})
+    }
+
     if (module.status !== 'to do') {
       const url = 'https://hackyourfuture.be/' + module.name + '/assignments.json'
       // const url = `https://${state.userName}.github.io/${module.name}/assignments.json`
@@ -71,14 +77,15 @@ const init = async () => {
   document.getElementById('class-name').innerHTML = state.repoName;
 
   const repoButton = document.createElement('button');
-  repoButton.innerHTML = 'to main repository';
+  repoButton.innerHTML = 'to class wiki';
 
   const a = document.createElement('a');
   a.href = "https://github.com/" + state.userName + "/" + state.repoName;
   a.target = "_blank";
   a.appendChild(repoButton);
 
-  document.getElementById('to-main-repo').appendChild(a);
+  document.getElementById('top-buttons').appendChild(a);
+  document.getElementById('bottom-buttons').appendChild(a.cloneNode(true));
 
   document.getElementById('go-home-top').onclick = async () => {
     document.getElementById('root').innerHTML = '';

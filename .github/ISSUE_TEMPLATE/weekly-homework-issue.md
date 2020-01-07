@@ -1,13 +1,11 @@
 ---
-name: My first HYF homework
+name: Weekly Homework Issue
 about: A template issue for the first week's assignment
-title: ''
+title: 'YourName: Week X, Module Name'
 labels: ''
 assignees: ''
 
 ---
-
-## YourName: Week X, Module Name
 
 Name of Project:
 

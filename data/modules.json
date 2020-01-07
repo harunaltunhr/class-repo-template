@@ -2,7 +2,13 @@
   {
     "name": "working-with-code",
     "status": "in progress",
-    "board": 1
+    "board": 1,
+    "coaches": [
+      {
+        "name": "Octo Cat",
+        "userName": "octocat"
+      }
+     ]
   },
   {
     "name": "incremental-development",

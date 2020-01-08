@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+> !:warning:! Replace `your-user-name` with your actual GitHub user name in the last three assignments !:warning:!
+
 - [ ] (computer) Software Installations
   - [ ] [Chromium](https://download-chromium.appspot.com/), [Firefox](https://www.mozilla.org/en-US/firefox/developer/) or [Brave](https://brave.com/download/): All great browsers with ES6, HTML5 & CSS3 support plus pre-installed, top-knotch developer tools.  Try each one to see what you like best!
   - [ ] [Visual Studio Code](https://code.visualstudio.com/download): Like Microsoft Word, but for code ...  and _sooooo_ much better.  After installing VSC, be sure to install these plug-ins:

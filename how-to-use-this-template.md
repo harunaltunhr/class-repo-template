@@ -21,6 +21,7 @@ Do you want to start a repo like this? not so hard! Head over to [the template r
     1. push to your new repo's wiki
 1. copy the template project board to your repo, one for each module
 1. add your students as collaborators in the class repo.  They will need `write` access to be able to add their issues to the project board
+1. create a new label in your repository called `ask on Sunday`, this will be used to tag issues for review in class. We use the color #FFFF00, because it's bright yellow like the sun 🌞
 
 
 > if you're using this repo outside of the HackYourFutureBelgium organization, you'll need to update a few links to make sure that the class repo is consistently pointing to itself where necessary.

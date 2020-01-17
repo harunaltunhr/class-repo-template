@@ -34,5 +34,29 @@
     "name": "public-apis",
     "status": "to do",
     "board": 6
+  },
+  {
+    "number": 6,
+    "name": "frontend-frameworks",
+    "status": "to do",
+    "board": 7
+  },
+  {
+    "number": 7,
+    "name": "web-apps",
+    "status": "to do",
+    "board": 8
+  },
+  {
+    "number": 8,
+    "name": "data-modeling",
+    "status": "to do",
+    "board": 9
+  },
+  {
+    "number": 9,
+    "name": "data-modeling",
+    "status": "to do",
+    "board": 10
   }
 ]

@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+> !:warning:! Replace `your-user-name` with your actual GitHub user name in the last three assignments !:warning:!
+
 - [ ] (computer) Software Installations
   - [ ] [Chromium](https://download-chromium.appspot.com/), [Firefox](https://www.mozilla.org/en-US/firefox/developer/) or [Brave](https://brave.com/download/): All great browsers with ES6, HTML5 & CSS3 support plus pre-installed, top-knotch developer tools.  Try each one to see what you like best!
   - [ ] [Visual Studio Code](https://code.visualstudio.com/download): Like Microsoft Word, but for code ...  and _sooooo_ much better.  After installing VSC, be sure to install these plug-ins:
@@ -15,6 +17,7 @@ assignees: ''
     - [ ] [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode#overview)
   - [ ] [GitKraken](https://www.gitkraken.com/download): A program that will help you master using git.
   - [ ] (If you have windows) [Git For Windows](https://gitforwindows.org/): This will allow you to use the same terminal commands & tools as Linux or Mac computers.
+  - [ ] Download Slack and log into HYF Be 
 - [ ] (computer) Start an HYF Directory
 - [ ] [My bio on the class repo](https://github.com/hackyourfuturebelgium/class-7/blob/master/student-bios/your-user-name.md)
 - [ ] [Hack My Future](https://github.com/your-user-name/hack-my-future)

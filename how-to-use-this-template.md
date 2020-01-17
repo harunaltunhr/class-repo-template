@@ -15,7 +15,7 @@ Do you want to start a repo like this? not so hard! Head over to [the template r
 1. copy the template project board to your repo, one for each module
 1. add your students as collaborators in the class repo.  They will need `write` access to be able to add their issues to the project board
 1. set up the repository for homework submission & tracking via issues
-    1. create a new label in your repository called `ask on Sunday`, this will be used to tag issues for review in class. We use the color #FFFF00, because it's bright yellow like the sun 🌞
+    1. create a new label in your repository called `ask-on-sunday`, this will be used to tag issues for review in class. We use the color #FFFF00, because it's bright yellow like the sun 🌞
     1. create labels called `week-n`, one for each week in the module
     1. create one milestone for each module ie. `working-with-code`
 1. each time you start a new module

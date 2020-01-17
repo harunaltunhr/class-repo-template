@@ -1,23 +1,15 @@
-# Class NUMBER
+# Class name
 
-Hello Class NUMBER!
+Hello Class name! You are more than just a number to us :)
 
-This repository is yours to keep track of what you've covered so far, to get to know each other, to post helpful resources, to practice collaborating on github, ... to do everything!  Slack is great for chatting but links and good explanations can easily get lost in message history.  Think of this repository as your class' forum and shared reference.
+This repository is yours to keep track of what you've covered so far, to get to know each other, to post helpful resources, to practice collaborating on github, ... to do everything!  Slack is great for chatting but links and good explanations can easily get lost in message history.  Think of this repository as your class' forum and home page.  We've started it for you, now you do the rest :mortar_board:
 
-
----
-
-## Homework & Projects
-
-You will be using [this repo's project boards](https://github.com/HackYourFutureBelgium/class-repo-template/projects) to keep track of each week's homework assignment.
-
-
-There are instructions for how to handle homework submission in [this repo's wiki](https://github.com/HackYourFutureBelgium/class-repo-template/wiki).  In the wiki you'll also find:
-* A history of all the coaches and modules you've seen
-* Your shared class notes
-* Some helpful links for getting started at HYF
-
-Enjoy!
+| Class name Pages | How to HYF  |
+| --- | ---  |
+|  [Shared Notes](./shared-notes) |  [Homework Submission](https://github.com/hackyourfuturebelgium/homework-submission) |
+| [Class Overview](https://hackyourfuture.be/class-name) |  [Curriculum Overview](https://curriculum.hackyourfuture.be) |
+| [Class Issues](github.com/hackyourfuturebelgium/class-name/issues) | [Student Handbook](https://github.com/HackYourFutureBelgium/student-handbook) |
+| [Homework Boards](github.com/hackyourfuturebelgium/class-name/projects) | [HYF Be Home Page](https://home.hackyourfuture.be) |
 
 
 ___

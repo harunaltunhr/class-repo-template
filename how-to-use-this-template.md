@@ -13,14 +13,14 @@ Do you want to start a repo like this? not so hard! Head over to [the template r
     1. update the `repoName` and `userName` in `./class-data/index.json`
     1. add your students to `./class-data/students.js` (`{name:"student name", userName: "githubUserName"}`)
     1. change the title of `index.html` to whatever you are calling your new class
-1. set up the wiki in your new repo
-    1. enable wikis in your new repo
-    1. enable editing for non-contributors (if you want to)
-    1. clone the wiki from this template repo
-    1. replace all instances of `class-repo-template` with your new repo name
-    1. push to your new repo's wiki
 1. copy the template project board to your repo, one for each module
 1. add your students as collaborators in the class repo.  They will need `write` access to be able to add their issues to the project board
+1. set up the repository for homework submission & tracking
+    1.
+1. each time you start a new module
+    1. copy the assignments from the module repository into the class repo (so it doesn't change if the module does)
+    1. change the statuses of the old and new module in the data file
+    1. update coaches.json, and ask any new coaches to add a bio in `coach-bios`
 
 
 > if you're using this repo outside of the HackYourFutureBelgium organization, you'll need to update a few links to make sure that the class repo is consistently pointing to itself where necessary.

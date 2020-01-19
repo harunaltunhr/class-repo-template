@@ -18,7 +18,7 @@ Do you want to start a repo like this? not so hard! Head over to [the template r
     1. create a new label in your repository called `ask-on-sunday`, this will be used to tag issues for review in class. We use the color #FFFF00, because it's bright yellow like the sun 🌞
     1. create labels called `week-n`, one for each week in the module
     1. create one milestone for each module ie. `working-with-code`
-    1. and one more issue called `ready-for-review`.  the dashboard app will check for this & closed to see if a homework issue is completed.
+    1. and two more issues called `homework` and `wednesday-check-in`. these will be used for filtering each students' 2 weekly issues
 1. each time you start a new module
     1. copy the assignments from the module repository into the class repo (so it doesn't change if the module does)
     1. change the statuses of the old and new module in the data file

@@ -13,31 +13,31 @@
   },
   {
     "number": 2,
-    "name": "separation-of-concerns",
+    "name": "debugging",
     "status": "to do",
     "board": 3
   },
   {
     "number": 3,
-    "name": "state",
+    "name": "separation-of-concerns",
     "status": "to do",
     "board": 4
   },
   {
     "number": 4,
-    "name": "encapsulation",
+    "name": "state",
     "status": "to do",
     "board": 5
   },
   {
     "number": 5,
-    "name": "public-apis",
+    "name": "encapsulation",
     "status": "to do",
     "board": 6
   },
   {
     "number": 6,
-    "name": "frontend-frameworks",
+    "name": "public-apis",
     "status": "to do",
     "board": 7
   },
@@ -55,8 +55,14 @@
   },
   {
     "number": 9,
-    "name": "data-modeling",
+    "name": "frontend-frameworks",
     "status": "to do",
     "board": 10
+  },
+  {
+    "number": 10,
+    "name": "collaborative-development",
+    "status": "to do",
+    "board": 11
   }
 ]

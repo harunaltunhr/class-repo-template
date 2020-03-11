@@ -28,3 +28,4 @@ assignees: ''
 - [ ] exercise name: [repo](https://github.com/user-name/repo-name), [live (if there is)]()
 - [ ] ...
 
+> Check out the [class-8](https://github.com/HackYourFutureBelgium/class-8/projects/4) repository to see some completed examples

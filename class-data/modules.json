@@ -37,7 +37,7 @@
   },
   {
     "number": 7,
-    "name": "public-apis",
+    "name": "asynchronous-programming",
     "status": "to do",
     "board": 7
   },
@@ -55,7 +55,7 @@
   },
   {
     "number": 10,
-    "name": "collaborative-development",
+    "name": "frontend-frameworks",
     "status": "to do",
     "board": 10
   },

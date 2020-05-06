@@ -1,8 +1,13 @@
 [
   {
+    "number": 0,
+    "name": "precourse",
+    "status": "in progress"
+  },
+  {
     "number": 1,
     "name": "working-with-code",
-    "status": "in progress",
+    "status": "to do",
     "board": 1
   },
   {

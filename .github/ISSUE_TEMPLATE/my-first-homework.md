@@ -12,7 +12,7 @@ assignees: ''
 - [ ] :egg: [Group Intro Repo](-link!-)
 - [ ] :egg: Started my HYF Directory
 - [ ] :egg: _First Week on GitHub_
-- [ ] :egg: [My student bio](https://github.com/hackyourfuturebelgium/repo-name/tree/master/student-bios/your-user-name.md)
+- [ ] :egg: My student bio: [the bio](https://github.com/hackyourfuturebelgium/repo-name/tree/master/student-bios/your-user-name.md), [the pull request](https://github.com/HackYourFutureBelgium/class-9-10/pull/X)
 - [ ] :egg: [my `hack-my-future` repo](https://github.com/your-user-name/hack-my-future)
 - [ ] :egg: my markdown home page: [Live](https://your-user-name.github.io), [Source](https://github.com/your-user-name.github.io)
 - [ ] :egg: [My _Learnables_ Project Board](https://github.com/users/your-user-name/projects/1)

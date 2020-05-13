@@ -1,7 +1,7 @@
 ---
 name: Weekly homework issue
 about: A starter for your weekly homework issues, modify it however makes sense for the week's assignments!  see a completed example here https://github.com/HackYourFutureBelgium/class-8/issues/285
-title: 'Your Name: module name, Week number'
+title: 'Your Name: module name, week number, homework'
 labels: ''
 assignees: ''
 

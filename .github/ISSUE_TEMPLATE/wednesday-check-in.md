@@ -1,7 +1,7 @@
 ---
 name: Wednesday Check-In
 about: A template issue for wednesday check-ins
-title: 'Your Name: module, week'
+title: 'Your Name: module, week, check-in'
 labels: ''
 assignees: ''
 

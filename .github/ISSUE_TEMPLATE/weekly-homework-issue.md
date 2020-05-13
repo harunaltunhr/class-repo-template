@@ -25,10 +25,8 @@ assignees: ''
 
 ### Isolate
 
-- [ ] `exercises-name`:
-  - [ ] [exercise - 1]()
-  - [ ] [exercise - 2]()
-  - [ ] [...]()
+- [ ] `exercises-name`
+- [ ] `exercises-name`
 
 ### Integrate
 

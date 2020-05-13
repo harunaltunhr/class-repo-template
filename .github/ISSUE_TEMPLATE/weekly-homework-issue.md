@@ -15,13 +15,9 @@ assignees: ''
 
 ## Prep Work
 
-### topic 1
-
-- [ ] [...]()
-
-### topic ...
-
-- [ ] [...]()
+- [ ] topic 1
+- [ ] topic 2
+- [ ] ...
 
 ---
 
@@ -29,7 +25,7 @@ assignees: ''
 
 ### Isolate
 
-- [ ] `exercise-name`:
+- [ ] `exercises-name`:
   - [ ] [exercise - 1]()
   - [ ] [exercise - 2]()
   - [ ] [...]()
@@ -46,7 +42,9 @@ assignees: ''
 
 ### Suggested Study
 
-- [ ] [link name]()
+- [ ] topic 1
+- [ ] topic 2
+- [ ] ...
 
 #### Exercises: Isolate
 

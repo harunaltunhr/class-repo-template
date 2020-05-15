@@ -44,15 +44,10 @@ assignees: ''
 - [ ] topic 2
 - [ ] ...
 
-#### Exercises: Isolate
+#### Exercises
 
 - [ ] `:emoji:` exercise 1: [repo](https://github.com/your-user-name/exercise-name), [live](https://your-user-name.github.io/exercise-name/)
-- [ ] `:emoji:` exercise ...: [repo](https://github.com/your-user-name/exercise-name), [live](https://your-user-name.github.io/exercise-name/)
-
-#### Exercises: Integrate
-
-- [ ] `:emoji:` exercise 1: [repo](https://github.com/your-user-name/exercise-name), [live](https://your-user-name.github.io/exercise-name/)
-- [ ] `:emoji:` exercise ...: [repo](https://github.com/your-user-name/exercise-name), [live](https://your-user-name.github.io/exercise-name/)
+- [ ] `:emoji:` ...: [repo](https://github.com/your-user-name/exercise-name), [live](https://your-user-name.github.io/exercise-name/)
 
 ### Project
 
